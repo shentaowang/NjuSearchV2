@@ -1,0 +1,36 @@
+PUT /njusearch3
+
+POST /njusearch3/test1/_mapping
+{
+  "test1": {
+    "_all": {
+      "analyzer": "ik_max_word",
+      "search_analyzer": "ik_max_word",
+      "term_vector": "no",
+      "store": "false"
+    },
+    "properties": {
+      "content": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word",
+          "include_in_all": "true",
+          "boost": 5
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word",
+          "include_in_all": "true",
+          "boost": 10
+        },
+        "url": {
+          "type": "text",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word",
+          "include_in_all": "true",
+          "boost": 10
+        }
+    }
+  }
+}
