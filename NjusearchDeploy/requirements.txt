@@ -3,7 +3,7 @@ Flask==0.12.2
 Jinja2==2.9.6
 MarkupSafe==1.0
 Pillow==4.2.1
-Werkzeug==0.12.2
+Werkzeug==0.15.3
 beautifulsoup4==4.6.0
 bs4==0.0.1
 certifi==2017.07.27.1
